@@ -1,8 +1,3 @@
-{{
-    config(
-        materialized='view'
-    )
-}}
 WITH l AS (
     SELECT *
     FROM {{ ref('dim_listings_cleansed') }}
